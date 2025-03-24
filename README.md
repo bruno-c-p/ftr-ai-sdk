@@ -1,34 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI SDK
 
-## Getting Started
+A Next.js-based SDK for integrating AI tools and capabilities into your applications. This project provides a set of tools for interacting with various AI services and APIs, including GitHub profile fetching and HTTP requests.
 
-First, run the development server:
+## Features
 
+- GitHub profile information retrieval
+- HTTP fetch capabilities
+- TypeScript support
+- Next.js integration
+- Built-in AI tools framework
+
+## Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- pnpm (v10.6.5 or higher)
+
+## Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd ai-sdk
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Copy the environment file and configure your variables:
+```bash
+cp .env.example .env.local
+```
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+To start the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application will be available at `http://localhost:3000`.
 
-## Deploy on Vercel
+## Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `pnpm dev` - Start development server with Turbopack
+- `pnpm build` - Build the application
+- `pnpm start` - Start production server
+- `pnpm lint` - Run linting
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+```
+src/
+  ├── ai/
+  │   └── tools/         # AI tools implementations
+  │       ├── index.ts   # Tools registry
+  │       ├── github-profile.ts
+  │       └── http-fetch.ts
+```
+
+## Tools
+
+### GitHub Profile Tool
+Fetches GitHub user profile information using the GitHub API.
+
+### HTTP Fetch Tool
+Provides HTTP request capabilities for external API interactions.
+
+## License
+
+Private - All rights reserved
+
+## Tech Stack
+
+- Next.js 15.2
+- React 19
+- TypeScript
+- Tailwind CSS
+- Zod for validation
+- AI SDK integrations (@ai-sdk/openai, @ai-sdk/react)

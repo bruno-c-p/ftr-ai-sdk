@@ -1,6 +1,6 @@
-# AI SDK
+# AI Chat App
 
-A Next.js-based SDK for integrating AI tools and capabilities into your applications. This project provides a set of tools for interacting with various AI services and APIs, including GitHub profile fetching and HTTP requests.
+Next.js-based chat application that seamlessly integrates AI capabilities with GitHub features. This project provides tools for AI-powered interactions, including fetching GitHub user profiles and making HTTP requests to external APIs.
 
 ## Features
 
